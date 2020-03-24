@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- My css Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen"/>
+  </head>
+
+ 	  
+<body>
+	<div class="container-fluid">
+    	<nav class="navbar navbar-inverse">
+    		<div class="container-fluid">
+            	<div class="navbar-header">
+                	<a class="navbar-brand" href="index.html"><span class="latitude">Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-icon"></span>
+	                </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+	              	<li>
+	                	<div class="dropdown">
+	                		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
+	                		<span class="caret"></span></button> 
+	                		<ul class="dropdown-menu">
+                                <li><a href="visualizations/temp.html">Temperature</a></li>
+                                <li><a href="visualizations/humidity.html">Humidity</a></li>
+                                <li><a href="visualizations/cloud.html">Cloudiness</a></li>
+                                <li><a href="visualizations/wind.html">Wind Speed</a></li>
+	                  		</ul>
+	                	</div>
+	              	</li>
+	              	<li>
+	                	<a class="nav-link" href="Comparisons.html"><span class="c-d">Comparison</a>
+	             	</li>
+	              	<li>
+	                	<a class="nav-link" href="Data.html"><span class="c-d">Data</a>
+	              	</li>
+                </ul>
+			</div>
+        </nav>
+	        
+	    <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                	<div class="col-md-12">
+                		<div class="box">
+                    		<div class="header">
+                    			<h1 class="title">Comparison: Latitude vs. X</h1>
+	              				<p class="category">Click any plot to get in_depth analysis.</p>
+	              			</div>
+                    		<div class="content">
+                        		<div class="row">
+                        			<div class="col-xs-12 col-sm-12 col-md-6">
+	                					<h2>vs. Temperature</h2>
+	              						<a href="visualizations/temp.html"><img class="img-fluid" src="assets/images/Fig1.png" alt="Latitude vs. Temperature" height="500" width="500"></a>
+	           						</div>
+	           						<div class="col-xs-12 col-sm-12 col-md-6">
+	              						<h2>vs. Humidity</h2>
+	              						<a href="visualizations/humidity.html"><img class="img-fluid" src="assets/images/Fig2.png" alt="Latitude vs. Humidity" height="500" width="500"></a>
+	           						</div>
+	            					<div class="col-xs-12 col-sm-12 col-md-6">
+	               						<h2>vs. Cloudiness</h2>
+	               						<a href="visualizations/cloud.html"><img class="img-fluid" src="assets/images/Fig3.png" alt="Latitude   vs. Cloudiness" height="500" width="500"></a>
+	            					</div>
+	            					<div class="col-xs-12 col-sm-12 col-md-6">
+	               						<h2>vs. Wind Speed</h2>
+								 		<a href="visualizations/wind.html"><img class="img-fluid" src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="500" width="500"></a>
+									</div>	 
+	          					</div>
+	          				</div>
+	          			</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</html>
