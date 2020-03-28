@@ -1,99 +1,126 @@
-body {
-    background: lightblue;
+/* Body */
+body{
+  background-color: #EDEDED; 
+}
+/* Navbar */
+.navbar{
+  max-height: 57px; 
+}
+.navigation .navbar-brand{
+  color: white; 
+  margin-left: 30px; 
+  padding: inherit; 
+  font-weight: bold; 
+  background-color: #0BADA6;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+  background-color: white; 
+  font-size: 15px; 
+}
+.active, .dropdown-menu .dropdown-item:active a:hover{
+  background-color:#E7E7E7!important; 
+}
+.dropdown-item{
+  color: #6D8092 !important; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+  background-color:#E7E7E7 !important; 
+}
+a{
+  color: #6D8092;
+  font-size: 15px; 
+}
+.nav-link:hover{
+  background-color:#E7E7E7 !important;
+ }
+
+.navbar-brand:hover{
+color: rgb(175, 175, 175) !important;
+}
+/* Images */
+img{
+  width:100% !important;
+  height:100% !important;
+}
+.active, .panel:hover{
+  border-color:#0BADA6;
+  border-style: solid; 
+  
+}
+.vizualization{
+  width:50% !important;
+  height:50% !important;
+}
+
+/* Title Class  */
+.title{
+  color: #0BADA6;  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder; 
+  padding-top: 25px; 
+}
+/* Paragraph Element */
+p{
+color: #6D8092;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px; 
+}
+/* Box Class */
+.box {
+  margin-top: 60px; 
+  margin-bottom: 62px; 
+  padding: 10px 20px 15px; 
+  color:black;
+  background-color: white; 
+
+}
+/* Table */
+.table{
+  font-size: 15px; 
+  border-top-color: white !important; 
+}
+/* Footer */
+footer{
+background-color: #666666; 
+border-top-style: solid; 
+border-top-width: 5px; 
+border-top-color: #0BADA6;
+color: white; 
+min-height: 55px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px; 
+text-align: center; 
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+padding-top: 15px; 
+}
+/* Media Queries */
+@media(max-width: 992px){
+.navbar-expand-lg{
+background-color: #0BADA6 !important;
+}
+.navbar{
+  max-height: none; 
+  padding: inherit;
+}
+.navbar div{
+  margin: inherit; 
+  background-color: white;  
+}
+.navbar-brand{
+  padding: 10px !important; 
+}
+
+button{
+  margin-right: 30px; 
+}
+button:focus {
+
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focusring-color;
+  
   }
-  /* every box is this size */
-  
-  .skyblue {
-    background: deepskyblue;
-  }
-  
-  .box{
-    padding: 10px;
-    background: white;
-    margin-top:50px;
-    margin-left:5px;
-    margin-right:5px;
-    margin-bottom:20px;
-    align-content: center;
-  }
-  
-  
-  /* Giving our navbar some padding and a background color */
-  .navbar {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 25px;
-    background: #5D6D7E;
-  }
-  
-  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-  .navbar li {
-    display: d-block;
-    padding: 10px;
-    margin-right: 0px;
-    margin-left: 0px;
-    cursor: pointer;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  
-  
-  p{
-      font-size: 20px;
-  }
-  
-  
-  .c-d{color:white;
-    font-size: 25px;
-  }
-  
-  .latitude {
-    color: white;
-    font-family: verdana;
-    font-size: 40px;
-    background-color: #2874A6;
-    border: 1px solid #2874A6;
-      padding: 15px;
-  }
-  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-  @media (max-width: 480px) {
-    .navbar li {
-      padding: 10px;
-    }
-    .box {
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-    .navbar ul {
-      visibility: hidden;
-    }
-    #nav-select {
-      visibility: visible;
-    }
-  }
-  
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-  
-  @media only screen and (max-width: 768px) {
-      /* For mobile phones: */
-      [class*="col-"] {
-          width: 100%;
-      }
-  }
-  
+}
